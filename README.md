@@ -28,14 +28,22 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read.
 
 1. Briefly compare and contrast `.forEach` & `.map` (2-3 sentences max)
+    forEach and Map are similar in that they iterate over each index of an array. where they differ is in what they actually DO when they iterate. ForEach is essentially a for loop it will iterate and do whatever you tell it to do. map is different in that it will put each index of the array through a function (of your own creation) and return the results in a new array. map is typically used for transforming a data set in some way and producing a new data set. 
 
 2. Explain the difference between a callback and a higher order function.
+    A higher order function receives a function in it's parameters. A callback function is passed into a higher order function as an argument. 
 
 3. What is closure?
+    A closure has to do with the scope of a variable. A function can reach outside of itself to access a variable (to a function that it is nested in, or even from a function the global scope). but it cannot work the other way around, you cannot access from the global scope variables that are private to a function, or from a function variables that are private to a nested function. 
 
 4. Describe the four rules of the 'this' keyword.
+    Global binding - not intended, an error. when this is not contextualized properly you will get the global or window context.
+    implicit binding - the most common type of binding. refer to the object left of the dot when the function was invoked to find what this is referring to. 
+    new binding. - when using the new keyword in a constructor function, this refers to the newly created object.
+    explicit binding - when using .call, .apply or .bind, it is in a sense an override of implicit binding. 
 
 5. Why do we need super() in an extended class?
+    super an extend replace .call and Object.create. they copy methods/prototypes and tell us who the parent of the child class is. 
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
